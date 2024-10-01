@@ -1,0 +1,317 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: auto;
+    background-color: #271F28;
+    margin: 0;
+    padding: 0;
+}
+
+#Hero {
+    background-image: url('../images/backgrounds/fotografia13.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca todo en una columna */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.imagen {
+    display: block;
+    margin-bottom: 20px; /* Espacio entre logo y cabecera */
+    text-align: center;
+}
+
+.imagen img {
+    width: 150px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.cabecera {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+    margin-bottom: 20px; /* Espacio entre cabecera y título */
+}
+
+/* Estilos de Menú */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 50px;
+    display: inline-table;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 18px; /* Tamaño de letra más grande */
+    transition: color 0.3s;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    font-size: 16px; 
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mostrar el dropdown al pasar el cursor */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para el título */
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 6em;
+    letter-spacing: 5pt;
+    color: white;
+    animation: aparecer 2s ease-in-out;
+}
+
+.titulo p {
+    font-size: 1.5em;
+    color: white;
+    margin-top: -50px;
+    animation: aparecer 2s ease-in-out;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Estilos para la sección de introducción */
+#Seccion1 {
+    background-color: #2C2330;
+    background-size: 100%;
+    height: auto;
+    width: auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+#Intro {
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    flex-wrap: wrap;
+}
+
+#Intro img {
+    height: 360px;
+    width: 660px;
+    margin-right: 20px;
+    margin-top: -70px;
+}
+
+#texto_intro {
+    width: 700px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+.palabra {
+    color: white;
+}
+
+/* Estilos del SlideShow */
+.SlideShow {
+    background-color: #2C2330;
+    background-size: cover;
+    height: auto;
+    width: 100%; 
+    display: grid;
+    place-items: center;
+    overflow: hidden; 
+}
+
+.slider {
+    height: 400px; 
+    margin: auto;
+    position: relative;
+    width: 100%; 
+    max-width: 900px; 
+    display: grid;
+    place-items: center;
+}
+
+.slide-track {
+    display: flex;
+    width: auto; 
+    animation: scroll 45s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100%)); 
+    }
+}
+
+.slide {
+    height: 300px; 
+    width: 300px; 
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+    transition: transform 1s;
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* Estilos del footer */
+#footer {
+    background-size: 100%;
+    height: auto;
+    width: auto;
+    padding: 2%;
+    background-color: #231C24;
+    color: white;
+    height: 20vh;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.7pt;
+}
+
+.img {
+    float: right;
+}
+
+.contacto {
+    float: left;
+    line-height: 1.7pt;
+    margin-right: 30px;
+}
+
+.img img {
+    width: 150px;
+    float: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+    .amigos {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
