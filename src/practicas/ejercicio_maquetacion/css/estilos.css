@@ -1,0 +1,487 @@
+/*  .....................Estilos generales ..................... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    margin: 15px;
+}
+
+/* ..................... ejercicio 1.....................  */
+
+.ej1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F4ABB;
+    width: 100%;
+    height: 115vh;
+    padding: 30px; 
+    box-sizing: border-box;
+}
+
+.ej1 .card1 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; 
+}
+
+.ej1 .card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.ej1 .card1 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.ej1 .datos_carga {
+    margin-bottom: 30px;
+}
+
+.ej1 .datos_carga h1 {
+    font-size: 64px;
+    color: #7327E4;
+    font-weight: bold;
+}
+
+.ej1 .datos_carga p {
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+    font-weight: 300;
+}
+
+.ej1 .lista_archivos {
+    margin-bottom: 40px;
+}
+
+.ej1 .lista_archivos li {
+    list-style-type: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.ej1 .card1 button {
+    display: block;
+    background-color: #7327E4;
+    margin: 0 auto;
+    width: 120px; 
+    height: 40px; 
+    font-size: 18px; 
+    border-radius: 10px; 
+    color: white;
+    font-weight: bold;
+    border: 0;
+    padding: 8px 20px; 
+}
+
+
+.ej1 .cancelar-btn:hover {
+    background-color: #5917C4;
+    transform: scale(1.05);
+}
+
+
+/* ..................... ejercicio 2..................... */
+.ej2 {
+    background: hsl(33, 76%, 53%);
+    height: 100%;
+    padding: 20px; 
+}
+
+.ej2 .card2 {
+    width: 400px; 
+    height: auto; 
+    min-height: 600px; 
+    background: white;
+    border-radius: 20px; 
+    margin: 0px auto;
+    padding: 60px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.ej2 .card2 img {
+    display: block;
+    margin: 0 auto;
+    width: 220px; 
+    height: 220px; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ej2 .card2 .datos_nombre {
+    width: 100%; 
+    text-align: center;
+    margin: 20px 0; 
+}
+
+.ej2 .card2 .datos_nombre h1 {
+    font-size: 28px; 
+    margin-bottom: 10px; 
+    color: hsl(210, 22%, 22%);
+}
+
+.ej2 .card2 .datos_nombre p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: hsl(0, 0%, 40%);
+    margin-bottom: 20px; 
+}
+
+.ej2 .card2 > button {
+    padding: 10px 40px; 
+    border-radius: 30px;
+    border: none;
+    background-color: #F2B14A;
+    display: block;
+    margin: 20px auto;
+    font-size: 18px; 
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.ej2 .card2 > button:hover {
+    background-color: #D99A3B; 
+    transform: translateY(-3px); 
+}
+
+
+.card2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px; 
+    gap: 5px; 
+}
+
+.card2 ul li {
+    display: inline-block;
+}
+
+.card2 ul li button {
+    width: 8px; 
+    height: 8px; 
+    background-color: darkgrey;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-indent: -9999px; 
+    transition: background-color 0.3s ease; 
+}
+
+.card2 ul li button:hover {
+    background-color: gray;
+}
+
+.card2 ul li .activo {
+    background-color: gray;
+}
+
+
+/* .....................ejercicio 3.....................*/
+.ej3 {
+    background-color: rgba(157, 12, 152, 0.852); 
+    height: 100%; 
+    padding: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /
+}
+
+.ej3 .contenedorcard3 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.ej3 .card3 {
+    margin: 0 auto; 
+    display: block; 
+    text-align: center; 
+    width: 400px; 
+    background-color: white;
+    padding: 35px 48px 0; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.ej3 .card3 img {
+    display: block; 
+    margin: 0 auto; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+}
+
+.ej3 .card3 .text {
+    padding: 10px 0 27px; 
+    width: 100%; 
+}
+
+.ej3 .card3 .text h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    color: hsl(210, 22%, 22%); 
+}
+
+.ej3 .card3 .text p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: hsl(0, 0%, 40%); 
+}
+
+.ej3 .contenedorcard3 button {
+    border: none; 
+    display: block; 
+    background-color: rgb(237, 96, 209); 
+    width: 100%; 
+    height: 47px; 
+    color: white; 
+    font-size: 18px; 
+    margin-top: -5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.ej3 .contenedorcard3 button:hover {
+    background-color: #e839d9; 
+}
+
+/*.....................ejercicio 4.....................*/
+.ej4 {
+    background-color: rgba(128, 247, 146, 0.9);
+    height: 100%;
+    padding: 30px;
+}
+
+.ej4 .card4 {
+    display: flex;
+    width: 845px;
+    height: auto;
+    padding: 20px; 
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.ej4 .card4 .header {
+    display: flex;
+    padding-bottom: 10px; 
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.ej4 .card4 .header p {
+    width: auto;
+    font-size: 10px; 
+    font-weight: 500; 
+    color: #333; 
+}
+
+.ej4 .card4 .header h2 {
+    width: 171px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #000;
+}
+
+.ej4 .card4 .contenido_card4 {
+    width: 100%; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    align-self: stretch;
+    margin-top: auto; 
+    padding-top: 20px; 
+}
+
+.ej4 .card4 .contenido_card4 .textcard4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.ej4 .card4 .contenido_card4 .textcard4 p {
+    font-size: 7px;
+    font-weight: 400;
+    color: #000;
+}
+
+.ej4 .card4 .contenido_card4 .imagecard4 {
+    display: flex;
+    height: 266px;
+    justify-content: center;
+    align-items: center;
+    gap: -9px;
+    align-self: stretch;
+}
+
+.ej4 .card4 .contenido_card4 .imagecard4 img {
+    height: 260px;
+    width: 261px;
+}
+
+.ej4 .card4 .contenido_card4 .imagecard4 h1 {
+    line-height: normal;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 370px;
+    letter-spacing: -16px;
+    padding-top: 40px;
+    padding-right: 10px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/*.....................ejercicio 5.....................*/
+.ej5 {
+    background-color: rgba(39, 198, 230, 0.815);
+    height: 100%;
+    padding: 30px;
+}
+
+.ej5 .card5 {
+    width: 581px;
+    height: auto;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000;
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.ej5 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    align-self: stretch;
+    padding-bottom: 20px; 
+}
+
+.ej5 header button {
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid #000;
+    background: none;
+    font-weight: bold;
+    padding: 10px 15px; 
+    cursor: pointer; 
+}
+
+.ej5 header .perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ej5 header .perfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    margin-left: 10px; 
+}
+
+.ej5 header .perfil h2 {
+    font-size: 15px;
+    padding-right: 10px;
+    font-weight: lighter;
+}
+
+.ej5 .contenido_card5 {
+    padding: 20px 0;
+    text-align: left; 
+    width: 100%; 
+}
+
+.ej5 .contenido_card5 h1 {
+    font-size: 45px;
+    padding-bottom: 15px;
+    font-weight: bold; 
+}
+
+.ej5 .contenido_card5 h2 {
+    font-size: 18px;
+    padding-bottom: 30px; 
+    font-weight: lighter;
+}
+
+.ej5 .contenido_card5 h3 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: bold; 
+}
+
+.board {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    padding-bottom: 40px; 
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.board img {
+    height: 240px;
+    width: auto; 
+}
+
+.board h2 {
+    font-weight: lighter;
+}
+
+.newboard {
+    margin-right: 50px; 
+}
+
+.inferior {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.inferior img {
+    height: 240px;
+    width: auto; 
+}
+
+.inferior h2 {
+    font-weight: lighter;
+}
+
+.smoot {
+    margin-right: 50px; 
+}

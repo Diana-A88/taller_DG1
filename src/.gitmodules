@@ -1,0 +1,3 @@
+[submodule "tarea_Mondrian"]
+  path = src/practicas/tarea_Mondrian
+  url = git@github.com:Diana-A88/tarea_Mondrian.git
