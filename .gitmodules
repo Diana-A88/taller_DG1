@@ -1,6 +1,6 @@
-[submodule "tarea_Mondrian"]
-	path = tarea_Mondrian
-	url = git@github.com:Diana-A88/tarea_Mondrian.git
 [submodule "ejercicio_maquetacion"]
-	path = ejercicio_maquetacion
+	path = src/practicas/ejercicio_maquetacion
 	url = git@github.com:Diana-A88/ejercicio_maquetacion.git
+[submodule "src/practicas/tarea_mondrian"]
+	path = src/practicas/tarea_mondrian
+	url = git@github.com:Diana-A88/tarea_Mondrian.git
